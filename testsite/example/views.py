@@ -9,7 +9,7 @@ from .forms import NameForm
 
 def example(request):
     template = loader.get_template('example/example.html')
-    return HttpResponse(template.render(template))
+    return HttpResponse(template.render())
 
 
 def get_name(request):
